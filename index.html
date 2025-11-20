@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mansaka: Heritage & Advocacy</title>
+    <style>
+        :root {
+            --primary-color: #5D4037; 
+            --accent-color: #D4AF37;  
+            --text-color: #2c2c2c;
+            --bg-color: #f9f7f2;      
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8; 
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Mansaka.jpg');
+            
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin: 0;
+            font-weight: 700;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+        }
+
+        header p {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        .section {
+            background: white;
+            margin-bottom: 3rem;
+            padding: 2.5rem;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--accent-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-top: 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background-color: #fdfdfd;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            text-align: left;
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background-color: var(--accent-color);
+            color: #333;
+        }
+
+        #cultural-fact {
+            margin-top: 20px;
+            padding: 15px;
+            border-left: 3px solid var(--accent-color);
+            background-color: #f9f9f9;
+            font-style: italic;
+            display: none; 
+        }
+
+        footer {
+            background-color: #222;
+            color: #aaa;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">Origin</a>
+        <a href="#culture">Culture</a>
+        <a href="#advocacy">Advocacy</a>
+    </nav>
+
+    <header>
+        <h1>The Mansaka</h1>
+        <p>Preserving the Heritage of the Uplands</p>
+    </header>
+
+    <div class="container">
+
+        <div id="about" class="section">
+            <h2>Ethnolinguistic Background</h2>
+            <p>Etymologically derived from <em>man</em> (person) and <em>saka</em> (to ascend), the <strong>Mansaka</strong> are recognized as the "people of the uplands." They constitute one of the eighteen distinct Lumad ethnolinguistic groups in Mindanao.</p> 
+            <p>Geographically, their population is concentrated in the provinces of <strong>Davao de Oro</strong> and <strong>Davao del Norte</strong>, specifically inhabiting the Maragusan Valley. The Mansaka are historically noted for their distinct physiological features and an egalitarian social structure governed by elders known as <em>Matikadong</em>.</p>
+        </div>
+
+        <div id="culture" class="section">
+            <h2>Cultural Identity & Arts</h2>
+            <p>The cultural heritage of the Mansaka is defined by their agrarian lifestyle, intricate beadwork, and distinctive textile production.</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>The Dagmay Cloth</h3>
+                    <p>A culturally significant abaca textile featuring intricate geometric patterns. Traditionally, these designs are not drafted but are revealed to the weaver through dreams.</p>
+                </div>
+                <div class="card">
+                    <h3>Musical Tradition</h3>
+                    <p>Their auditory culture utilizes instruments such as the <em>Kudlong</em> (two-stringed lute) and the <em>Gimbal</em> (drum) to communicate narratives and folklore.</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 30px; text-align: center;">
+                <button onclick="showFact()">View Cultural Insight</button>
+                <p id="cultural-fact"></p>
+            </div>
+        </div>
+
+        <div id="advocacy" class="section">
+            <h2>Strategic Advocacy & Support</h2>
+            <p>To ensure the preservation of Mansaka identity and rights, our group proposes the following support mechanisms:</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>1. Ancestral Domain</h3>
+                    <p>Promoting literacy regarding the <strong>Indigenous Peoples' Rights Act (IPRA)</strong> to protect ancestral lands (CADT) from unauthorized encroachment and industrial exploitation.</p>
+                </div>
+                <div class="card">
+                    <h3>2. Economic Empowerment</h3>
+                    <p>Facilitating ethical trade by connecting <em>Dagmay</em> weavers directly to markets, eliminating intermediaries to ensure fair economic compensation.</p>
+                </div>
+                <div class="card">
+                    <h3>3. Cultural Integrity</h3>
+                    <p>Digitizing oral traditions and establishing guidelines for responsible eco-tourism to prevent the commodification of their sacred rituals.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 GEC 002 CS21S3. For The Mansaka Tribe.</p>
+    </footer>
+
+    <script>
+        function showFact() {
+            const factBox = document.getElementById('cultural-fact');
+            const facts = [
+                "Did you know? Mansaka women traditionally wear heavy jewelry and distinctive bangs, a style that has been preserved for generations as a marker of identity.",
+                "The Mansaka practice swidden farming (kaingin) primarily for root crops, which supplements their hunting and gathering activities.",
+                "Unlike some hierarchical tribes, the Mansaka community decisions are often made through consensus led by the Matikadong."
+            ];
+            
+            const randomFact = facts[Math.floor(Math.random() * facts.length)];
+            
+            factBox.style.display = 'block';
+            factBox.innerText = randomFact;
+        }
+    </script>
+
+</body>
+</html>
